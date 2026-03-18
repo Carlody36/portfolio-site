@@ -23,7 +23,7 @@ const About = () => {
       icon: <FaGraduationCap className="text-2xl" />,
       title: "Academic Foundation",
       description:
-        "2nd Year B.Tech in Computer Engineering, building strong fundamentals in DSA and computer science principles.",
+        "Gained exposure to both frontend and backend concepts, preparing for a career in tech.",
     },
     {
       icon: <FaCode className="text-2xl" />,
@@ -35,14 +35,9 @@ const About = () => {
       icon: <FaArrowRight className="text-2xl" />,
       title: "Real-World Projects",
       description:
-        "Developed and deployed 10+ production-ready applications spanning note-taking, URL shortening, AI tools, expense tracking, and more.",
+        "Developed and deployed 5+ production‑ready applications, including a Todolist app, a personal portfolio site, and a school‑inspired website, showcasing skills in React.js, Node.js, PostgreSQL, and responsive design.",
     },
-    {
-      icon: <FaYoutube className="text-2xl" />,
-      title: "Content Creator",
-      description:
-        "Recently began content creation journey on YouTube @SkillCoder-By_Aadarsh, sharing knowledge and insights with the developer community.",
-    },
+
   ];
 
   const skills = [
@@ -84,9 +79,7 @@ const About = () => {
           </h1>
           <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto rounded-full mb-6"></div>
           <p className={`text-lg md:text-xl max-w-2xl mx-auto ${textPrimary}`}>
-            A passionate developer and learner on a continuous journey of growth
-            and innovation
-          </p>
+         Frontend developer with a passion for learning and building user-centered web experiences.          </p>
         </div>
 
         <div
@@ -96,23 +89,7 @@ const About = () => {
             Welcome to My Journey
           </h2>
           <p className={`text-lg leading-relaxed ${textPrimary} mb-4`}>
-            I'm{" "}
-            <span className="font-semibold text-blue-500">
-              Aadarsh Shrivastav
-            </span>
-            , a 2nd-year B.Tech student in Computer Engineering with a passion
-            for building scalable and user-centric applications. My development
-            journey began during my first year, starting with fundamental Data
-            Structures and Algorithms, which laid a strong foundation for my
-            technical growth.
-          </p>
-          <p className={`text-lg leading-relaxed ${textPrimary}`}>
-            Over time, I transitioned from theoretical concepts to practical
-            development, mastering web technologies from front-end basics to
-            full-stack application development. Today, I combine academic
-            excellence with hands-on experience, continuously pushing the
-            boundaries of what I can create.
-          </p>
+          Experienced in customer service and e‑commerce support, I transitioned into web development with skills in HTML5, CSS3, JavaScript, React.js, Node.js, and PostgreSQL. My background in workflow optimization and client communication complements my technical expertise, demonstrated through projects like responsive landing pages and interactive portfolio websites. Currently, I’m creating a portfolio website builder service designed to help businesses establish a strong online presence and showcase their work effectively.          </p>
         </div>
 
         <div className="mb-16">
@@ -202,34 +179,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
-              <div className="text-3xl font-bold text-blue-500 min-w-fit">
-                $
-              </div>
-              <div>
-                <h3 className={`font-bold ${headingColor} mb-1`}>
-                  Monetized Work
-                </h3>
-                <p className={textPrimary}>
-                  Generated revenue from client projects and commercial
-                  applications
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="text-3xl font-bold text-blue-500 min-w-fit">
-                📺
-              </div>
-              <div>
-                <h3 className={`font-bold ${headingColor} mb-1`}>
-                  Content Creator
-                </h3>
-                <p className={textPrimary}>
-                  YouTube channel @SkillCoder-By_Aadarsh sharing development
-                  insights
-                </p>
-              </div>
-            </div>
+           
+            
             <div className="flex gap-4">
               <div className="text-3xl font-bold text-blue-500 min-w-fit">
                 🎯
@@ -262,7 +213,7 @@ const About = () => {
               View My Projects <FaArrowRight className="text-sm" />
             </a>
             <a
-              href="https://www.youtube.com/@SkillCoder-By_Aadarsh"
+              href="https://www.youtube.com/@misteryosogaming7749h"
               target="_blank"
               rel="noopener noreferrer"
               className={`px-8 py-3 rounded-lg font-semibold border-2 transition-all duration-300 inline-flex items-center justify-center gap-2 ${

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useTheme } from "../context/Theme/ThemeContext";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -17,69 +18,31 @@ const Work = () => {
 
   const projects = [
     {
-      title: "QuickScribe",
+      title: "Portfolio 2026",
       desc: "QuickScribe — Intelligent MERN Note-Taking App to create, manage, and organize notes with search, filtering, tags, and pinning. Built with the MERN stack.",
       img: "./quick.png",
-      live: "https://notes-frontend-alpha-beryl.vercel.app",
-      git: "https://github.com/Aadarsh-max/QuickScribe",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      live: "https://karl-dev-portfolio.netlify.app/",
+      git: "https://github.com/Carlody36/karl-portfolio",
+      tech: ["Tailwind", "React"],
     },
     {
-      title: "SnipScan",
+      title: "School Website Design & Development",
       desc: "SnipScan — A responsive URL Shortener app built with MERN, enabling users to create short links and QR codes for easy sharing and scanning.",
       img: "./url.png",
-      live: "https://url-shortner-frontend-phi.vercel.app",
-      git: "https://github.com/Aadarsh-max/SnipScan",
-      tech: ["React", "Node.js", "MongoDB", "QR Code"],
+      live: "https://iccwebsiteclone.netlify.app/",
+      git: "https://github.com/Carlody36/my-school-site",
+      tech: ["HTML", "CSS", "JavaScript"],
     },
     {
-      title: "PrepMateAI",
+      title: "Taskly",
       desc: "PrepMateAI — AI-powered interview prep tool using Google's Gemini AI. Get tailored technical questions, code snippets, and saved sessions.",
       img: "./ai.png",
-      live: "https://prepmate-ai-nine.vercel.app",
-      git: "https://github.com/Aadarsh-max/PrepMateAI",
-      tech: ["React", "Gemini AI", "Node.js", "MongoDB"],
+      live: "https://task-tracker-tailwind.netlify.app/",
+      git: "https://github.com/Carlody36/todo-list-js",
+      tech: ["HTMLt", "CSS", "JavaScript"],
     },
-    {
-      title: "Expense Tracker",
-      desc: "Expense Tracker — Smart MERN app for managing income & expenses with charts and dashboards for financial insights.",
-      img: "./expense.png",
-      live: "https://expense-tracker-gamma-dun.vercel.app",
-      git: "https://github.com/Aadarsh-max/Expense-Tracker",
-      tech: ["React", "Charts.js", "MongoDB", "Node.js"],
-    },
-    {
-      title: "Streamify",
-      desc: "Streamify — A MERN-based app for connecting, chatting, and collaborating with people globally through text and video communication.",
-      img: "./streamify.png",
-      live: "https://streamify-app-47nz.onrender.com",
-      git: "https://github.com/Aadarsh-max/Streamify",
-      tech: ["React", "WebRTC", "Socket.io", "Node.js"],
-    },
-    {
-      title: "Resume Builder",
-      desc: "Resume Builder — A MERN app that helps users create professional resumes with multiple templates and export as PDF.",
-      img: "./resume.png",
-      live: "https://resume-three-cyan.vercel.app",
-      git: "https://github.com/Aadarsh-max/Resume-Builder",
-      tech: ["React", "PDF.js", "MongoDB", "Node.js"],
-    },
-    {
-      title: "Microsys Computers",
-      desc: "Microsys Computers — My first earning project, a professional business website built with modern web technologies.",
-      img: "./microsys.png",
-      live: "https://microsys-computers.vercel.app",
-      git: "https://github.com/Aadarsh-max/Microsys-Computers",
-      tech: ["React", "Tailwind", "Node.js", "MongoDB"],
-    },
-    {
-      title: "My Portfolio",
-      desc: "My Portfolio — A personal website showcasing my skills, projects, and journey as a developer with smooth animations and dark/light mode.",
-      img: "./myport.png",
-      live: "https://my-portfolio-omega-tawny-21.vercel.app",
-      git: "https://github.com/Aadarsh-max/My-Portfolio",
-      tech: ["React", "Framer Motion", "Tailwind", "Next.js"],
-    },
+ 
+   
   ];
 
   return (
@@ -121,22 +84,7 @@ const Work = () => {
                   : "hover:-translate-y-2"
               } ${cardBg} group relative`}
             >
-              <div className="relative h-56 overflow-hidden bg-gradient-to-b from-blue-500/10 to-transparent">
-                <img
-                  src={project.img}
-                  alt={project.title}
-                  className={`w-full h-full object-cover transition-transform duration-500 ${
-                    hoveredIndex === index ? "scale-110" : "scale-100"
-                  }`}
-                />
-                <div
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    hoveredIndex === index
-                      ? "bg-black/40 opacity-100"
-                      : "bg-black/0 opacity-0"
-                  }`}
-                ></div>
-              </div>
+              
 
               <div className="p-6 flex flex-col justify-between h-[280px]">
                 <div>

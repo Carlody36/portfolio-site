@@ -1,12 +1,11 @@
 import React from "react";
 import { useTheme } from "../context/Theme/ThemeContext";
-import {
-  FaCode,
-  FaDatabase,
-  FaPython,
-  FaGraduationCap,
-  FaShieldAlt,
-} from "react-icons/fa";
+import { SiMongodb } from "react-icons/si"; // MERN stack
+import { FaMousePointer } from "react-icons/fa"; // Landing Page Developer
+import { FaLaptopCode } from "react-icons/fa"; // Portfolio Specialist
+import { MdDevices } from "react-icons/md"; // Responsive Design Fixer
+import { SiTailwindcss } from "react-icons/si"; // Tailwind Specialist
+
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -19,35 +18,39 @@ const Home = () => {
 
   const roles = [
     {
-      icon: FaCode,
-      title: "Full Stack Developer",
-      desc: "Building complete web solutions",
+      icon: FaLaptopCode,
+      title: "Frontend Developer",
+      desc: "Web Interface Specialist",
     },
     {
-      icon: FaDatabase,
+      icon: SiMongodb,
       title: "MERN Stack Developer",
       desc: "MongoDB, Express, React, Node.js",
     },
     {
-      icon: FaGraduationCap,
-      title: "DSA Problem Solver",
-      desc: "Solving complex algorithms",
+      icon: FaMousePointer,
+      title: "Landing Page Developer",
+      desc: "Conversion‑focused web pages",
+
+    },
+    
+
+    {
+      icon: FaLaptopCode,
+      title: "Portfolio Specialist",
+      desc: "Personal branding showcase sites",
     },
     {
-      icon: FaPython,
-      title: "AI/ML Enthusiast",
-      desc: "Exploring artificial intelligence",
+      icon: MdDevices,
+      title: "Responsive Design",
+      desc: "Mobile‑friendly layout solutions",
     },
     {
-      icon: FaDatabase,
-      title: "Data Science Enthusiast",
-      desc: "Analyzing and visualizing data",
+      icon: SiTailwindcss,
+      title: "React + Tailwind Specialist",
+      desc: "Modern UI with React/Tailwind",
     },
-    {
-      icon: FaShieldAlt,
-      title: "Cybersecurity Enthusiast",
-      desc: "Securing systems and data",
-    },
+    
   ];
 
   return (
@@ -64,32 +67,23 @@ const Home = () => {
             >
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
-                Aadarsh Shrivastav
+                Karl William Lee
               </span>
             </h1>
 
             <p
               className={`text-lg sm:text-xl md:text-2xl font-semibold mb-6 ${textSecondary}`}
             >
-              Full Stack Developer | MERN Specialist
+              Front-End Developer
             </p>
 
             <p
               className={`text-base sm:text-lg leading-relaxed mb-8 ${textPrimary}`}
             >
-              I'm a passionate{" "}
-              <span className="font-semibold">Full Stack Developer</span>{" "}
-              specializing in the{" "}
-              <span className="font-semibold">MERN Stack</span>. Beyond coding,
-              I create engaging content on{" "}
-              <span className="font-semibold">
-                YouTube @SkillCoder-By_Aadarsh
-              </span>
-              , explore <span className="font-semibold">AI/ML</span> and{" "}
-              <span className="font-semibold">Data Science</span>, and love
-              solving challenging{" "}
-              <span className="font-semibold">Data Structure & Algorithm</span>{" "}
-              problems.
+
+
+  I’m a Front-End Developer focused on building responsive and user-friendly web applications using React, JavaScript, and Tailwind CSS. I enjoy turning ideas into functional digital experiences and creating clean, modern interfaces. I’ve built projects like a to-do list app, portfolio websites, and responsive landing pages.
+      
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -126,13 +120,18 @@ const Home = () => {
               } shadow-2xl`}
             >
               <img
-                src="./pro.jpg"
-                alt="Aadarsh Shrivastav"
+                src="./logo1.png"
+                alt="Portfolio website preview"
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+      
+          </div>
+        </div>
+        <div className="mt-8" />
+
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
               {roles.map((role, idx) => {
                 const Icon = role.icon;
                 return (
@@ -163,8 +162,6 @@ const Home = () => {
                 );
               })}
             </div>
-          </div>
-        </div>
       </div>
     </div>
   );

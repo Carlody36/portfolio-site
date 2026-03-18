@@ -1,7 +1,7 @@
 import React from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {Routes, Route, useLocation} from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
@@ -24,8 +24,9 @@ const Trackers = () => {
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
+      
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,12 +35,25 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/connect" element={<Connect />} />
       </Routes>
+      
+      
 
       <Footer />
+      
 
       <Trackers />
-    </Router>
+
+      
+
+      
+    </>
+    
+
+    
   );
+
+  
 };
+
 
 export default App;

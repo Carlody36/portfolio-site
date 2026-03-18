@@ -22,22 +22,22 @@ const Connect = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "aadarshshrivastav01@gmail.com",
+      value: "karlwilliamlee@gmail.com",
     },
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Alternate Email",
-      value: "adarshrivastav.4545@gmail.com",
+      value: "karlwilliam61@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "7620457148",
+      value: "+639555318846",
     },
     {
       icon: <GraduationCap className="w-5 h-5" />,
       label: "Education",
-      value: "B.Tech in Computer Engineering",
+      value: "Bachelor of Science in Information Technology",
     },
   ];
 
@@ -45,37 +45,24 @@ const Connect = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      link: "https://github.com/Aadarsh-max",
+      link: "https://github.com/Carlody36",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/aadarsh-shrivastav-686722325",
+      link: "https://www.linkedin.com/in/karl-william-lee-093962358/",
     },
-    {
-      icon: <Instagram className="w-5 h-5" />,
-      label: "Instagram",
-      link: "https://instagram.com/hii_aadarshhh",
-    },
-    {
-      icon: <MessageCircle className="w-5 h-5" />,
-      label: "WhatsApp",
-      link: "https://wa.me/7620457148",
-    },
-    {
-      icon: <Twitter className="w-5 h-5" />,
-      label: "X",
-      link: "https://x.com/aaddyshrivastav",
-    },
+   
+  
     {
       icon: <Facebook className="w-5 h-5" />,
       label: "Facebook",
-      link: "https://www.facebook.com/share/196MZezWQY",
+      link: "https://www.facebook.com/carl.li89/Y",
     },
     {
       icon: <Youtube className="w-5 h-5" />,
       label: "YouTube",
-      link: "https://www.youtube.com/@SkillCoder-By_Aadarsh",
+      link: "https://www.youtube.com/@misteryosogaming7749",
     },
   ];
 
@@ -106,8 +93,8 @@ const Connect = () => {
                 <User className="w-16 h-16 text-blue-600" />
                 {/* Replace with actual image */}
                 <img
-                  src="./pro1.jpg"
-                  alt="Aadarsh Shrivastav"
+                  src="./picture.png"
+                  alt="Image not available"
                   className="absolute inset-0 object-cover w-full h-full rounded-2xl opacity-90"
                 />
               </div>
@@ -121,7 +108,7 @@ const Connect = () => {
           >
             Connect with{" "}
             <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
-              Aadarsh Shrivastav
+              Karl William Lee
             </span>
           </h1>
 
@@ -130,7 +117,7 @@ const Connect = () => {
               isDark ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Age: 19 Years
+  
           </p>
         </div>
 

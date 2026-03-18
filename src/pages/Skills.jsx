@@ -4,53 +4,60 @@ import { Link } from "react-router-dom";
 
 const categories = [
   {
-    title: "Programming Languages",
+    title: "Core Web Technologies",
     skills: [
-      { name: "C", level: 85, icon: "⚙️" },
-      { name: "C++", level: 90, icon: "🔧" },
-      { name: "Java", level: 80, icon: "☕" },
-      { name: "JavaScript", level: 95, icon: "⚡" },
-      { name: "Python", level: 88, icon: "🐍" },
+      { name: "HTML5", level: 90, icon: "🌐" },
+      { name: "CSS3", level: 90, icon: "🎨" },
+      { name: "JavaScript (ES6+)", level: 90, icon: "⚡" },
+    
     ],
   },
   {
-    title: "Web Development",
+    title: " Frameworks & Libraries",
     skills: [
       { name: "React", level: 92, icon: "⚛️" },
-      { name: "HTML", level: 95, icon: "🌐" },
-      { name: "CSS", level: 90, icon: "🎨" },
-      { name: "Tailwind", level: 88, icon: "💨" },
-      { name: "MERN Stack", level: 85, icon: "📚" },
-      { name: "Next Js", level: 85, icon: "📚" },
-      { name: "Django", level: 75, icon: "🐍" },
+      { name: "Tailwind CSS", level: 95, icon: "💨" },
+      { name: "Express js", level: 95, icon: "🚂" },
+   
     ],
   },
   {
-    title: "Database & Backend",
+    title: "UI / Styling Skills",
     skills: [
-      { name: "SQL", level: 85, icon: "🗄️" },
-      { name: "MySQL", level: 82, icon: "🐬" },
-      { name: "PostgreSQL", level: 82, icon: "🐬" },
-      { name: "MongoDB", level: 80, icon: "🍃" },
-      { name: "Node.js", level: 88, icon: "🟢" },
+      { name: "Figma", level: 82, icon: "🐬" },
+      { name: "Adobe Photoshop", level: 85, icon: "🗄️" },
+      { name: "Responsive Design", level: 82, icon: "🐬" },
+    
+     
     ],
   },
   {
-    title: "Tools & Technologies",
+    title: "Developer Tools",
     skills: [
       { name: "Git", level: 90, icon: "📋" },
       { name: "GitHub", level: 92, icon: "🐙" },
-      { name: "VS Code", level: 95, icon: "💻" },
-      { name: "Tkinter", level: 78, icon: "🖥️" },
+      { name: "npm", level: 95, icon: "💻" },
+      { name: "Vite", level: 78, icon: "🖥️" },
+    ],
+  },
+   {
+    title: "Developer Tools",
+    skills: [
+
+      { name: "VS Code", level: 90, icon: "💻" },
+      { name: "Chrome DevTools", level: 90, icon: "🌐" },
+      { name: "Postman", level: 92, icon: "📮" },
+      { name: "Vercel", level: 95, icon: "🚀" },
     ],
   },
   {
-    title: "Computer Science",
+    title: " Soft Skills",
     skills: [
-      { name: "Data Structures", level: 85, icon: "🏗️" },
-      { name: "Algorithms", level: 82, icon: "🧠" },
-      { name: "Computer Architecture", level: 78, icon: "🔧" },
-      { name: "System Design", level: 75, icon: "📐" },
+      { name: "Communication.", level: 85, icon: "🏗️" },
+      { name: "Problem‑Solving", level: 82, icon: "🧠" },
+      { name: "Adaptability", level: 78, icon: "🔧" },
+      { name: "Teamwork/Collaboration", level: 75, icon: "📐" },
+
     ],
   },
 ];
@@ -137,8 +144,7 @@ const Skills = () => {
 
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto rounded-full mb-6"></div>
           <p className={`text-lg md:text-xl ${textPrimary} max-w-3xl mx-auto`}>
-            A comprehensive overview of my technical expertise across different
-            domains of software development
+           Hands‑on skills across frontend and backend development, crafted through real projects and continuous learning.
           </p>
         </div>
 
@@ -180,7 +186,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16 ">
           {categories.map((category, idx) => (
             <div
               key={category.title}
@@ -194,7 +200,7 @@ const Skills = () => {
               onMouseLeave={() => setHoveredCard(null)}
             >
               <div
-                className={`${cardBg} rounded-2xl border-2 p-8 transition-all duration-300 ${
+                className={`${cardBg} h-full rounded-2xl border-2 p-8 transition-all duration-300 ${
                   hoveredCard === idx
                     ? isDark
                       ? "border-blue-600 shadow-lg shadow-blue-900/20"
@@ -206,7 +212,7 @@ const Skills = () => {
                   {category.title}
                 </h2>
 
-                <div className="space-y-1">
+                <div className="space-y-1 ">
                   {category.skills.map((skill, skillIdx) => (
                     <SkillBar
                       key={skill.name}
@@ -233,37 +239,11 @@ const Skills = () => {
               isDark ? "text-white" : "text-gray-900"
             }`}
           >
-            Continuous Learning
+            Constant Learning
           </h2>
           <p className={`text-lg mb-8 ${textPrimary}`}>
-            Technology evolves rapidly, and so do I. I'm constantly learning new
-            frameworks, exploring emerging technologies, and refining my
-            existing skills. My journey in tech is just beginning, and I'm
-            excited about what lies ahead.
-          </p>
-          <div className="flex gap-4 flex-wrap">
-            <div
-              className={`${accentBg} border-2 ${
-                isDark ? "border-blue-800" : "border-blue-300"
-              } px-6 py-3 rounded-full text-sm font-semibold ${textPrimary}`}
-            >
-              🎯 Currently Learning: Data Science
-            </div>
-            <div
-              className={`${accentBg} border-2 ${
-                isDark ? "border-blue-800" : "border-blue-300"
-              } px-6 py-3 rounded-full text-sm font-semibold ${textPrimary}`}
-            >
-              🚀 Next Goal: Cloud Computing
-            </div>
-            <div
-              className={`${accentBg} border-2 ${
-                isDark ? "border-blue-800" : "border-blue-300"
-              } px-6 py-3 rounded-full text-sm font-semibold ${textPrimary}`}
-            >
-              💡 Exploring: AI/ML
-            </div>
-          </div>
+          Learning never stops—each step builds toward smarter, scalable, and recruiter‑ready solutions.          </p>
+      
         </div>
         <div
           className={`text-center mt-16 opacity-0 animate-fade-in`}
@@ -272,7 +252,7 @@ const Skills = () => {
           <div className="flex gap-4 justify-center flex-wrap">
             <Link to="/work">
               <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                View My Projects
+                See My Work
               </button>
             </Link>
 
@@ -284,7 +264,7 @@ const Skills = () => {
                     : "border-2 border-blue-600 text-blue-600 hover:bg-blue-50"
                 } px-8 py-4 cursor-pointer rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1`}
               >
-                Let's Collaborate
+                Work With Me
               </button>
             </Link>
           </div>
