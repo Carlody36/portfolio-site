@@ -21,8 +21,8 @@ const Work = () => {
       title: "Portfolio 2026",
       desc: "QuickScribe — Intelligent MERN Note-Taking App to create, manage, and organize notes with search, filtering, tags, and pinning. Built with the MERN stack.",
       img: "./quick.png",
-      live: "https://karl-dev-portfolio.netlify.app/",
-      git: "https://github.com/Carlody36/karl-portfolio",
+      live: "https://karlleeportfolio.netlify.app//",
+      git: "https://github.com/Carlody36/portfolio-site",
       tech: ["Tailwind", "React"],
     },
     {
