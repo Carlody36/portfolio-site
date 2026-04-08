@@ -186,19 +186,21 @@ const Connect = () => {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
           <a
-            href="mailto:aadarshshrivastav01@gmail.com"
-            className={`px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-500 text-center ${
-              isDark
-                ? "bg-blue-900 text-white hover:scale-110"
-                : "bg-blue-100 text-blue-600 hover:bg-blue-200 hover:scale-110"
-            }`}
-          >
-            <Mail className="inline w-5 h-5 mr-2" />
-            Send Email
-          </a>
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=karlwilliamlee@gmail.com&su=Hello%20Karl&body=Hi,%20I%20want%20to%20connect%20with%20you"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-500 text-center ${
+          isDark
+          ? "bg-blue-900 text-white hover:scale-110"
+          : "bg-blue-100 text-blue-600 hover:bg-blue-200 hover:scale-110"
+  }`}
+>
+  <Mail className="inline w-5 h-5 mr-2" />
+  Send Email
+</a>
 
           <a
-            href="https://wa.me/7620457148"
+            href="https://wa.me/639555318846"
             className={`px-8 py-4 rounded-xl border-2 font-semibold transition-all duration-500 text-center ${
               isDark
                 ? "border-blue-900 text-blue-400 hover:bg-green-600 hover:text-white hover:border-green-600"
