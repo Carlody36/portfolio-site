@@ -26,7 +26,7 @@ const Work = () => {
       tech: ["Tailwind", "React"],
     },
     {
-      title: "School Website Design & Development",
+      title: "School Website",
       desc: "SnipScan — A responsive URL Shortener app built with MERN, enabling users to create short links and QR codes for easy sharing and scanning.",
       img: "./url.png",
       live: "https://iccwebsiteclone.netlify.app/",
